@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Unary Plus</title>
+  <link rel="stylesheet" type="text/css" href="../assets/style.css" />
+  <script src="../assets/script.js"></script>
+  <script>
+    variables.push('input', 'value');
+    code.push('var input;\nvar value;');
+    code.push('input = "123";');
+    code.push('value = +"42";');
+    code.push('value = +input;');
+    code.push('input = undefined;');
+    code.push('input = +input;');
+    code.push('input = -150;');
+    code.push('value = +input;');
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="code"></div>
+    <div class="memory"></div>
+  </div>
+</body>
+
+</html>

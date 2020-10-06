@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Logical And/Or</title>
+  <link rel="stylesheet" type="text/css" href="../assets/style.css" />
+  <script src="../assets/script.js"></script>
+  <script>
+    variables.push('x', 'y', 'z');
+    code.push('var x;\nvar y;\nvar z;');
+    code.push('x = true;\ny = false;');
+    code.push('z = x || y;');
+    code.push('z = x && y;');
+    code.push('z = x && !y;');
+    code.push('x = "";\ny = "Frank";');
+    code.push('z = x || "Default";');
+    code.push('z = y || "Default";');
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="code"></div>
+    <div class="memory"></div>
+  </div>
+</body>
+
+</html>

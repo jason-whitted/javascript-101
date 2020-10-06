@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>If...Else</title>
+  <link rel="stylesheet" type="text/css" href="../assets/style.css" />
+  <script src="../assets/script.js"></script>
+  <script>
+    variables.push('first', 'last', 'lastFirst', 'fullName');
+    code.push('var first;\nvar last;\nvar lastFirst;\nvar fullName;');
+    code.push('first = "Alan";\nlast = "Turing";\nlastFirst = true;');
+    code.push('if (lastFirst) {\n  fullName = last + ", " + first;\n} else {\n  fullName = first + " " + last;\n}');
+    code.push('lastFirst = undefined;');
+    code.push('if (lastFirst) {\n  fullName = last + ", " + first;\n} else {\n  fullName = first + " " + last;\n}');
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="code"></div>
+    <div class="memory"></div>
+  </div>
+</body>
+
+</html>

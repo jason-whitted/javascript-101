@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+}
+
+.container > div {
+  padding: 10px;
+  font-family: monospace;
+  border: 1px solid black;
+  min-width: 30vw;
+}
+
+.memory > div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+
+h1 {
+  margin: 0;
+  border-bottom: 1px solid silver;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+pre {
+  margin: 0;
+}
+
+code {
+  color: blue;
+}

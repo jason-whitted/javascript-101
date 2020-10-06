@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Concatenation</title>
+  <link rel="stylesheet" type="text/css" href="../assets/style.css" />
+  <script src="../assets/script.js"></script>
+  <script>
+    variables.push('first', 'last', 'fullName');
+    code.push('var first;\nvar last;\nvar fullName;');
+    code.push('first = "Jane";\nlast = "Doe";');
+    code.push('fullName = last + ", " + first;');
+    code.push('first = undefined;\nlast = true;');
+    code.push('fullName = first + " " + last;');
+    code.push('first = 2;\nlast = "-D";');
+    code.push('fullName = "R" + first + last + first;');
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="code"></div>
+    <div class="memory"></div>
+  </div>
+</body>
+
+</html>

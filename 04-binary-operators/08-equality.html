@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Equality</title>
+  <link rel="stylesheet" type="text/css" href="../assets/style.css" />
+  <script src="../assets/script.js"></script>
+  <script>
+    variables.push('x', 'y', 'z');
+    code.push('var x;\nvar y;\nvar z;');
+    code.push('x = 42;\ny = 3.1415;');
+    code.push('z = x === 42;');
+    code.push('z = 3 + 0.1415 === pi;');
+    code.push('x = 0.2;\ny = x + x;');
+    code.push('z = 0.1 + 0.3 === y;');
+    code.push('z = x + y === 0.6;');
+    code.push('x = 0.6;\ny = 0.2 + 0.2 + 0.2;');
+    code.push('x = 2 + "b" === "2b";');
+    code.push('x = 123;');
+    code.push('y = x === "123";');
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="code"></div>
+    <div class="memory"></div>
+  </div>
+</body>
+
+</html>
