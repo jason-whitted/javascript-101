@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Objects</title>
+  <link rel="stylesheet" type="text/css" href="../assets/style.css" />
+  <script src="../assets/script.js"></script>
+  <script>
+    variables.push('person', 'value');
+    code.push('var person;\nvar value;');
+    code.push('person = {};\nvalue = "";');
+    code.push('value = person.birthYear;');
+    code.push('person.birthYear = 1969;');
+    code.push('value = person.birthYear;');
+    code.push('person.name = {\n  first: "Jack",\n  last: "Black"\n};');
+    code.push('value = person.name;');
+    code.push('value = person.name.first + " " + person.name.last;');
+    code.push('function getNacho() {\n  return "Nachoooooo!";\n}\n\nperson.speak = getNacho;');
+    code.push('value = person.speak();');
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="code"></div>
+    <div class="memory"></div>
+  </div>
+</body>
+
+</html>

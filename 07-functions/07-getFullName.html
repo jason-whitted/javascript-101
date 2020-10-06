@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>function getFullName</title>
+  <link rel="stylesheet" type="text/css" href="../assets/style.css" />
+  <script src="../assets/script.js"></script>
+  <script>
+    function getFullName(first, last, lastFirst) {
+      if (lastFirst) {
+        return last + ", " + first;
+      } else {
+        return first + " " + last;
+      }
+    }
+
+    variables.push('getFullName', 'fullName');
+    code.push(getFullName.toString().replace(/\n\s{4}/g, '\n') + '\n\nvar fullName;');
+    code.push('fullName = getFullName("Ada", "Lovelace", true);');
+    code.push('fullName = getFullName("Grace", "Hopper", false);');
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="code"></div>
+    <div class="memory"></div>
+  </div>
+</body>
+
+</html>

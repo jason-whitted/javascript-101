@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>function increment</title>
+  <link rel="stylesheet" type="text/css" href="../assets/style.css" />
+  <script src="../assets/script.js"></script>
+  <script>
+    function increment() {
+      count = count + 1;
+    }
+
+    variables.push('increment', 'count');
+    code.push('var count;\n\n' + increment.toString().replace(/\n\s{4}/g, '\n'));
+    code.push('count = 0;');
+    code.push('increment;');
+    code.push('increment();');
+    code.push('increment();');
+    code.push('count = 1234;');
+    code.push('increment();');
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="code"></div>
+    <div class="memory"></div>
+  </div>
+</body>
+
+</html>
